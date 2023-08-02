@@ -1,0 +1,94 @@
+:root {
+  --primary-bg-color: #47afe8;
+  --secondary-bg-color: #6ccf8d;
+  --light-bg-color: #fff;
+  --grey-bg-color: #d2e5f9;
+  --button-bg-color: #f59c63;
+  --text-color: white;
+  --heading-font-size: 16px;
+  --data-font-size: 18px;
+  --data-padding: 15px;
+  --border-radius: 25px;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: Verdana;
+}
+
+.container {
+  margin: 5% 15%;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 40%;
+  padding: 16px;
+}
+
+#nextBtn {
+  background-color: var(--button-bg-color);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--heading-font-size);
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+}
+
+.heading {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.peopleName {
+  background-color: var(--grey-bg-color);
+}
+
+#serialNum {
+  background: var(--secondary-bg-color);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: xxx-large;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  flex: initial;
+  padding-top: 2%;
+}
+
+#peopleName {
+  background-color: var(--grey-bg-color);
+  border-radius: 0px var(--border-radius) 0px 0px;
+}
+
+#peopleLocation {
+  background-color: var(--light-bg-color);
+  border-radius: 0px 0px var(--border-radius) 0px;
+}
+
+#peopleData {
+  padding: initial;
+  flex: 80%;
+}
+
+#peopleName,
+#peopleLocation {
+  padding: 15px 0px 15px 15px;
+  font-size: x-large;
+}
+
+#currentName,
+#currentLocation {
+  padding-left: 10px;
+}
+
+.data-title {
+  filter: blur(0.4px);
+  color: #323d47;
+}
